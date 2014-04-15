@@ -2,20 +2,32 @@ A sample project demonstrating how to build a GWT compatible parser module using
 
 This project is supplied with JavaCC 6.1 RC1 and its accompanying license.
 
-A tutorial corresponding to these (Eclipse) projects can be found here : 
+A two part tutorial corresponding to these (Eclipse) projects can be found here : 
 
-http://consoliii.blogspot.co.uk/2014/04/creating-gwt-compatible-parser-using.html
+* http://consoliii.blogspot.co.uk/2014/04/creating-gwt-compatible-parser-using.html    (part one)
+* http://consoliii.blogspot.co.uk/2014/04/creating-gwt-compatible-parser-using_15.html (part two)
 
-If you have any questions, please direct them to the blog or via guthub.
+If you have any questions, please direct them to the blog or via github.
 
-TUTORIAL LICENSE
-----------------
+CODE LICENSE
+------------
 
-This code in this tutorial can be freely copied and pasted from without restriction.
+This code in this tutorial can be used freely without restriction.
 
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
+THE POSSIBILITY OF SUCH DAMAGE.
 
-JAVACC-LICENSE (Only required in project that ships with JavaCC)
-----------------------------------------------------------------
+JAVACC-BINARY-LICENSE (Only required in project that ship with JavaCC)
+----------------------------------------------------------------------
 
 Copyright (c) 2006, Sun Microsystems, Inc.
 All rights reserved.

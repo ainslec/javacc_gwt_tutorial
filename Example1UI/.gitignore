@@ -1,3 +1,5 @@
 .settings/
 bin/
 target/
+gwt-unitCache/
+test-classes/
