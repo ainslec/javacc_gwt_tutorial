@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.5.1//EN"
+  "http://google-web-toolkit.googlecode.com/svn/tags/2.5.1/distro-source/core/src/gwt-module.dtd">
+<module rename-to='example1ui'>
+
+  <!-- Standard GWT module includes -->
+  
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.google.gwt.user.theme.clean.Clean'/>
+
+  <!-- We import the JavaCC parser here. The GWT compiler uses this declaration
+       to determine which source code it should process when generating client
+       side JavaScript.  -->
+  <inherits name='org.consoli.javaccgwt.example1.Example1'/>
+  
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='org.consoli.javaccgwt.example1ui.client.Example1UI'/>
+
+  <source path='client'/>
+  <source path='shared'/>
+</module>

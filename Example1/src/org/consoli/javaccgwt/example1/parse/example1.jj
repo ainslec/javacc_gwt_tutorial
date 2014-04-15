@@ -1,0 +1,33 @@
+options {
+  static              = false;
+  IGNORE_CASE         = false;
+  JAVA_UNICODE_ESCAPE = true;
+  JDK_VERSION        = "1.5";
+  // Not yet detected as a valid option by the Eclipse plugin, but works nonetheless. This is essential for GWT compatible generated code.
+  JAVA_TEMPLATE_TYPE = "modern";  
+}
+
+PARSER_BEGIN(Parser)
+package org.consoli.javaccgwt.example1.parse;
+
+public class Parser {
+}
+
+PARSER_END(Parser)
+
+SPECIAL_TOKEN :
+{
+      < WHITESPACE: " " | "\t" | "\n" | "\r" >
+}
+TOKEN :
+{
+      < ONE:   "one" >
+    | < TWO:   "two" >
+    | < THREE: "three" >
+}
+
+void parse() : {}
+{
+    ( < ONE > | < TWO > | < THREE >)+
+    < EOF >
+}
