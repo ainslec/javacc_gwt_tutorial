@@ -1,0 +1,43 @@
+options {
+  static              = false;
+  IGNORE_CASE         = false;
+  JAVA_UNICODE_ESCAPE = true;
+  JDK_VERSION        = "1.5";
+  
+  // Not yet detected as a valid option by the Eclipse plugin, but works nonetheless. This is essential for GWT compatible generated code.
+  JAVA_TEMPLATE_TYPE = "modern";
+
+  /* When GENERATE_BOILERPLATE = false , then the [TokenMgrException, Token, ParseException, Provider, StringProvider, StreamProvider] boilerplate classes are not generated
+     This is useful when there are two or more parsers in the same module / project as these classes will be identical given the same set of options flags. If this flag
+     is used then an import to the package where these classes are located is required (but not enforced or detected by the code generator).
+   */
+  GENERATE_BOILERPLATE = false;
+}
+
+PARSER_BEGIN(Parser2)
+package org.consoli.javaccgwt.example2.parse;
+
+/* This imports boilerplate classes from another package */
+import org.consoli.javaccgwt.example1.parse.*;
+
+public class Parser2 {
+}
+
+PARSER_END(Parser2)
+
+SPECIAL_TOKEN :
+{
+      < WHITESPACE: " " | "\t" | "\n" | "\r" >
+}
+TOKEN :
+{
+      < FOUR: "four" >
+    | < FIVE: "five" >
+    | < SIX:  "six" >
+}
+
+void parse() : {}
+{
+    ( < FOUR > | < FIVE > | < SIX >)+
+    < EOF >
+}
